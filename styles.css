@@ -1,0 +1,119 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(235, 235, 235);
+  font-family: monospace;
+}
+.main {
+  height: 35em;
+  width: 30em;
+  margin: 4rem auto;
+  padding: 2em;
+  border-radius: 1em 1em 8em 1em;
+  background: rgb(255, 255, 255);
+  /* background: gray; */
+}
+
+form {
+  display: flex;
+  gap: 1em;
+  margin-bottom: 1em;
+  position: relative;
+}
+input {
+  height: 3em;
+  width: 4em;
+  margin-bottom: 0.5em;
+  padding: 0.5em;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+input:focus {
+  outline-color: rgb(114, 114, 233);
+  outline-width: 1px;
+  /* outline-style: dotted; */
+  /* color: blue; */
+}
+input:focus {
+  color: rgb(114, 114, 233);
+}
+
+.form-elements {
+  padding: 0.3em;
+  margin-bottom: 5em;
+  height: 6em;
+  display: flex;
+  flex-direction: column;
+}
+label {
+  font-weight: 1em;
+  opacity: 0.8;
+  font-size: 0.8em;
+  margin-bottom: 0.9em;
+}
+img {
+  color: black;
+}
+button {
+  /* float: right; */
+  text-align: right;
+  margin: 3.5em 5em 1em 0em;
+  padding: 0.5em;
+  background: rgb(114, 114, 233);
+  height: 4.5em;
+  width: 4.5em;
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  top: 7em;
+  left: 40%;
+  /* background: red; */
+}
+button:hover {
+  cursor: pointer;
+}
+.horizontal-line {
+  width: 90%;
+  height: 1px;
+  background-color: rgb(184, 182, 182);
+  margin: 2em 0; /* Center the line horizontally */
+}
+.details p {
+  font-size: 3.5em;
+  font-weight: bold;
+}
+.info-update {
+  color: rgb(114, 114, 233);
+}
+.error {
+  /* display: none; */
+  opacity: 0;
+  color: red;
+}
+.hidden {
+  /* display: none; */
+  opacity: 1;
+  color: red;
+}
+.attribution {
+  font-size: 1.5em;
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    width: 50em;
+  }
+  input {
+    width: 4em;
+  }
+  button {
+    left: 90%;
+  }
+}
